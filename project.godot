@@ -19,6 +19,10 @@ config/name="towerRoyal"
 run/main_scene="res://Scenes/TestScenes/TestArea.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+dir="*res://Scripts/engine/directions.gd"
+
 [display]
 
 window/size/width=800

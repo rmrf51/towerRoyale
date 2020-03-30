@@ -1,6 +1,5 @@
 extends "res://Scripts/engine/entity.gd"
 
-
 func _physics_process(delta):
 	controls_loop()
 	movement_loop()

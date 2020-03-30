@@ -8,6 +8,7 @@ extents = Vector2( 9.08333, 10.35 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "idledown"
+loop = true
 step = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -24,6 +25,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "idleleft"
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -39,6 +41,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=4]
 resource_name = "idleright"
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -54,6 +57,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=5]
 resource_name = "idleup"
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -69,6 +73,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=6]
 resource_name = "walkdown"
+loop = true
 step = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -83,8 +88,9 @@ tracks/0/keys = {
 "values": [ 0, 1, 2 ]
 }
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=7]
 resource_name = "walkleft"
+loop = true
 step = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -101,6 +107,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=8]
 resource_name = "walkright"
+loop = true
 step = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -115,8 +122,8 @@ tracks/0/keys = {
 "values": [ 6, 7, 8 ]
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "walkup"
+[sub_resource type="Animation" id=9]
+loop = true
 step = 0.3
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -141,7 +148,6 @@ scale = Vector2( 4, 4 )
 texture = ExtResource( 1 )
 vframes = 4
 hframes = 3
-frame = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 visible = false
@@ -155,6 +161,6 @@ anims/idleleft = SubResource( 3 )
 anims/idleright = SubResource( 4 )
 anims/idleup = SubResource( 5 )
 anims/walkdown = SubResource( 6 )
-anims/walkleft = SubResource( 9 )
+anims/walkleft = SubResource( 7 )
 anims/walkright = SubResource( 8 )
-anims/walkup = SubResource( 7 )
+anims/walkup = SubResource( 9 )

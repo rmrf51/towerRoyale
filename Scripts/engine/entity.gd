@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var SPEED = 70*6
+const SPEED = 70*6
 
 var movedir = Vector2(0,0)
 var spritedir = "down"
