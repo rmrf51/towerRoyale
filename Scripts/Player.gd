@@ -1,10 +1,11 @@
 extends "res://Scripts/engine/entity.gd"
 
+
 func _physics_process(delta):
 	controls_loop()
 	movement_loop()
 	spritedir_loop()
-	
+
 	if is_on_wall():
 		if spritedir == "left" and test_move(transform, Vector2(-1,0)):
 			print("push")
@@ -26,11 +27,5 @@ func controls_loop():
 	var UP		= Input.is_action_pressed("ui_up")
 	var DOWN	= Input.is_action_pressed("ui_down")
 	
-	movedir.x = -int(LEFT) + int(RIGHT)
-	movedir.y = -int(UP) + int(DOWN)
-	
-
-
-
-
-
+	movedir.x =  int(RIGHT) - int(LEFT)
+	movedir.y =  int(DOWN) - int(UP) 
